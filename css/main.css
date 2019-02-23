@@ -70,7 +70,7 @@ strong {
     bottom: 0rem;
     opacity: 1; } }
 
-@keyframes apple-bg {
+@keyframes hero-bg {
   from {
     bottom: -16rem;
     opacity: 0; }
@@ -243,7 +243,7 @@ article.hero {
     font-weight: 900;
     color: #888888;
     text-transform: uppercase; }
-  article.hero img.apple-bg {
+  article.hero img.hero-bg {
     position: absolute;
     z-index: -1;
     bottom: -8rem;
@@ -254,11 +254,11 @@ article.hero {
   @media (max-width: 767.98px) {
     article.hero {
       padding: 12rem 0rem 12rem; }
-      article.hero img.apple-bg {
+      article.hero img.hero-bg {
         position: absolute;
         z-index: -1;
         bottom: -8rem;
-        left: -8rem;
+        left: -4rem;
         right: auto;
         opacity: .1; } }
 

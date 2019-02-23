@@ -193,14 +193,14 @@ article.hero {
     color: $grey;
     text-transform: uppercase;
   }
-  img.apple-bg {
+  img.hero-bg {
     position: absolute;
     z-index: -1;
     bottom: -8rem;
     right: -2rem;
     opacity: .2;
     // &.animate {
-    //   animation: apple-bg .5s 1;
+    //   animation: hero-bg .5s 1;
     //   animation-delay: .4s;
     //   animation-timing-function: ease;
     //   animation-fill-mode: forwards;
@@ -215,11 +215,11 @@ article.hero {
   }
   @media (max-width: 767.98px) {
     padding: 12rem 0rem 12rem;
-    img.apple-bg {
+    img.hero-bg {
       position: absolute;
       z-index: -1;
       bottom: -8rem;
-      left: -8rem;
+      left: -4rem;
       right: auto;
       opacity: .1;
     }
