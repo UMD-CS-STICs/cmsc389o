@@ -163,6 +163,11 @@ article.nav {
   animation-timing-function: ease;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  padding-bottom: 1rem;
+}
+
 article.hero {
   // background-color: black;
   position: relative;

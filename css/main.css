@@ -94,8 +94,18 @@ strong {
   width: 100%;
   height: 100%; }
 
+.p-b-s {
+  padding-bottom: 1rem; }
+
+.p-b-m {
+  padding-bottom: 3rem; }
+
 .p-b-l {
   padding-bottom: 6rem; }
+
+.p-x-m {
+  padding-right: 3rem;
+  padding-left: 3rem; }
 
 .highlight {
   padding: 4px;
@@ -216,6 +226,10 @@ article.nav {
     article.nav li:first-child {
       margin-left: 0rem;
       flex: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  padding-bottom: 1rem; }
 
 article.hero {
   position: relative;
