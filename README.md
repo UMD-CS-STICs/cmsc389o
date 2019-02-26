@@ -22,3 +22,5 @@ This website is developed using Sass. Styles must be edited in `./scss/main.scss
 The best way to continuosly edit the styles for this website is to run this command in another terminal while serving the website to continually watch for changes in the `scss/main.scss` file, rebuilding `css/main.css`whenever a change is seen.
 
 `$ npm run watch-scss`
+
+###### Code credits to David Ng and his work on the [STICs Website](https://github.com/UMD-CS-STICs/UMD-CS-STICs.github.io)
