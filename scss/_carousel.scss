@@ -1,0 +1,34 @@
+.gallery-cell {
+  width: 100%;
+  height: 280px;
+}
+
+.testimonial {
+  text-align: center;
+  max-width: 850px;
+  margin: 100px auto 130px auto;
+  padding: 0 20px;
+}
+
+// .testimonial-avatar {
+//   width: 100px;
+//   border-radius: 50%;
+// }
+
+.testimonial-quote {
+  display: block;
+  padding: 10px 0;
+}
+
+.testimonial-author {
+  display: block;
+  color: white;
+}
+
+.flickity-page-dots {
+  bottom: 25px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: white;
+}

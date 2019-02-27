@@ -48,7 +48,7 @@ a {
     color: #0075A2;
     text-decoration: none; }
 
-article.section, article.home-intro, article.home-info, article.faq, article.contact {
+article.section, article.home-testimonials, article.home-info, article.faq, article.contact {
   padding-top: 8rem;
   padding-bottom: 8rem;
   background-color: white; }
@@ -106,6 +106,30 @@ strong {
 .p-x-m {
   padding-right: 3rem;
   padding-left: 3rem; }
+
+.gallery-cell {
+  width: 100%;
+  height: 280px; }
+
+.testimonial {
+  text-align: center;
+  max-width: 850px;
+  margin: 100px auto 130px auto;
+  padding: 0 20px; }
+
+.testimonial-quote {
+  display: block;
+  padding: 10px 0; }
+
+.testimonial-author {
+  display: block;
+  color: white; }
+
+.flickity-page-dots {
+  bottom: 25px; }
+
+.flickity-page-dots .dot.is-selected {
+  background: white; }
 
 .highlight {
   padding: 4px;
@@ -268,10 +292,12 @@ article.subpage-hero {
     article.subpage-hero {
       padding: 8rem 0rem 0rem; } }
 
-article.home-intro {
+article.home-testimonials {
   background-color: #0075A2;
-  color: white; }
-  article.home-intro h4 {
+  color: white;
+  padding-top: 0rem;
+  padding-bottom: 5rem; }
+  article.home-testimonials h4 {
     font-size: 2rem; }
 
 span.divider {

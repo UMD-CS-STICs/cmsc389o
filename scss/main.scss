@@ -3,6 +3,7 @@
 @import '_animation';
 @import '_video';
 @import '_spacing';
+@import '_carousel';
 
 .highlight {
   padding: 4px;
@@ -233,13 +234,15 @@ article.subpage-hero {
   }
 }
 
-article.home-intro {
+article.home-testimonials {
   @extend article.section;
   background-color: $blue;
   color: white;
   h4 {
     font-size: 2rem;
   }
+  padding-top: 0rem;
+  padding-bottom: 5rem;
 }
 
 span.divider {

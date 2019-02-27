@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css" type="text/css" rel="stylesheet" />
   <link rel="shortcut icon" href="./assets/favicon.ico" />
 </head>
 
@@ -54,16 +55,29 @@
     </div>
   </article>
 
-  <article class="home-intro">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-6 offset-md-3 col-sm-3">
-          <p>
-            "The course gave me really good insight on the types/topic of coding questions most interviewers throw at you. Exposure
+  <article class="home-testimonials">
+    <div class="home-testimonials-container">
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <!-- <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg"> -->
+          <q class="testimonial-quote">
+            The course gave me really good insight on the types/topic of coding questions most interviewers throw at you. Exposure
             to problems <strong>helped me decipher tougher problems</strong> utilizing coding questions I’ve seen in class as a
-            starting point. The setup was <strong>very realistic</strong> and gave me practice for my future interview. This course 
-            <strong>condenses and organizes</strong> what you should know before walking into your technical interview."
-          </p>
+            starting point. The setup was <strong>very realistic</strong> and gave me practice for my future interview. This course
+            <strong>condenses and organizes</strong> what you should know before walking into your technical interview.
+          </q>
+          <span class="testimonial-author">Yan-Jen L.</span>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <!-- <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg"> -->
+          <q class="testimonial-quote">
+            Doing in-person mock interviews every week on topics from graphs to system design helped <strong>hone my interview 
+            skills</strong>. After taking the class, I felt <strong>confident and prepared</strong> in real interviews. Overall,
+            the class is an excellent blend of learning technical problem solving and practicing real world interview skills.
+          </q>
+          <span class="testimonial-author">Noah S.</span>
         </div>
       </div>
     </div>
@@ -200,6 +214,7 @@
   </article>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
   <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript " src="./js/main.js "></script>
   <script type="text/javascript">
@@ -210,6 +225,15 @@
     // If currently between October and February, link to Spring registration (01); otherwise, Fall registration (08)
     let termId = (month < 2 || month > 10) ? year + "08" : year + "01";
     document.getElementById('register-btn').href = "https://app.testudo.umd.edu/soc/" + termId + "/CMSC/CMSC389O";
+
+    // Initialize testimonial carousel
+    let flkty = new Flickity('.home-testimonials-container', {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 5000
+    });
   </script>
 </body>
 
