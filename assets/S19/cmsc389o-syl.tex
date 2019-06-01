@@ -10,6 +10,7 @@
 \usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
 %\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
 %\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{float}
 \usepackage{hyperref} % hyperlinks
 \hypersetup{
     colorlinks=true,
@@ -17,6 +18,7 @@
     filecolor=magenta,      
     urlcolor=cyan,
 }
+
 
 %%% PAGE DIMENSIONS
 \usepackage{geometry} % to change the page dimensions. Read ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf for detailed page layout information 
@@ -102,7 +104,7 @@ Most of the classes will be in-class interviews to give real interview practice.
 
 \noindent\textbf{Supplementary Material: }
 
-\begin{table}[h!]
+\begin{table}[hbt!]
   \begin{tabular}{@{}ll}
     All topics & \href{https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949}{Elements of Programming Interviews} {\small by Adnan Aziz, Tsung-Hsien Lee, Amit Prakash} \\
     Big O & \href{https://cses.fi/book/index.html}{Competitive Programmer's Handbook sec. 2.2, 2.3} {\small (free online book) by Antti Laaksonen} \\ 
@@ -110,11 +112,11 @@ Most of the classes will be in-class interviews to give real interview practice.
   \end{tabular}
 \end{table}
 
-  
+
 \medskip
 
 \noindent\textbf{Time and Location:}
-\begin{table}[h!]
+\begin{table}[H]
   \begin{tabular}{rrl}
     Section & Time    & Location  \\
     \hline
@@ -147,7 +149,7 @@ please use email.
 
 \noindent\textbf{Course Facilitator(s): }
 
-\begin{table}[h!]
+\begin{table}[H]
   \begin{tabular}{@{}rll}
     Head TA & Maria McCulley  & \href{mailto:mmccull2@umd.edu}{mmccull2@umd.edu}\\
     0101    & Anna Keleher    & \href{mailto:keleherblue@gmail.com}{keleherblue@gmail.com}\\
@@ -170,7 +172,9 @@ please use email.
 
 
 \section*{Schedule}
-\begin{table}[h!]
+See table \ref{tab:schedule} for the weekly schedule.
+
+\begin{table}[hbt!]
   \begin{tabular}{@{}rlll}
     Wk & Date & Topic & Point People \\
     \hline
@@ -191,6 +195,8 @@ please use email.
     15& 2019-05-10 & \multicolumn{2}{c}{\textbf{CMSC389O Finals Week II}} \\
     16& 2019-05-17 & \multicolumn{2}{c}{\textbf{Final Exams Week}}
   \end{tabular}
+  \caption{Schedule for the semester, broken down by week}
+  \label{tab:schedule}
 \end{table}
 
 Please note if you have any questions about a particular week’s pre-lecture activity, lecture activity, homework, or extra credit, the point people for that topic are the best people to answer your question.
