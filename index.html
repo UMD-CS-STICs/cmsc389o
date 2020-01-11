@@ -51,7 +51,7 @@
               </p>
             </div>
           </div>
-	  <a class="button button-red" href="https://stics.umd.edu/assets/syllabi/F19/CMSC389O_F19.pdf">Syllabus</a>
+	  <a class="button button-red" href="https://stics.umd.edu/cmsc389o/assets/S20/cmsc389o-syl.pdf">Syllabus</a>
           <a id="register-btn" class="button button-red" target="#">register on testudo &rarr;</a>
         </div>
       </div>
@@ -228,7 +228,7 @@
     let year = now.getFullYear();
     let month = now.getMonth();
     // If currently between October and February, link to Spring registration (01); otherwise, Fall registration (08)
-    let termId = (month < 2 || month > 10) ? year + "08" : year + "01";
+    let termId = year + ((month < 2 || month > 10) ? "01" : "08");
     document.getElementById('register-btn').href = "https://app.testudo.umd.edu/soc/" + termId + "/CMSC/CMSC389O";
 
     // Initialize testimonial carousel
