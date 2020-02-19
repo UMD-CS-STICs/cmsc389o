@@ -1,0 +1,284 @@
+
+\documentclass[12pt]{article}
+
+
+%%% PACKAGES
+
+\usepackage{bibentry} %to use intext full bibliography entries instead of citations.  You will need a separate BibTex database for this to work.  See http://cst.usc.edu/services/tel/grants/legrants.html for details on this package.
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+%\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfigure} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{float}
+\usepackage{hyperref} % hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+  }
+
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions. Read ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf for detailed page layout information
+\geometry{margin=1in} % for example, change the margins to 1 inches all round
+%\geometry{landscape} % set up the page for landscape
+%
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0.4pt} % customise the layout...
+%\lhead{}\chead{}\rhead{}
+%\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%\rfoot{\footnotesize CMSC 389O}
+\rhead{\footnotesize Fall 2020}
+\lhead{\footnotesize CMSC389O: The Coding Interview}
+\renewcommand\footrulewidth{0pt}
+
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+
+\usepackage[printwatermark]{xwatermark}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+% DRAFT watermark
+\newwatermark[allpages,color=gray!25,angle=45,scale=6,xpos=0,ypos=0]{DRAFT}
+
+%% END Article customise
+
+%%% BEGIN DOCUMENT
+
+
+\begin{document}
+
+
+\thispagestyle{plain} %alternatively specify empty to get no footer on first page.  This is part of the fancyhdr package
+
+
+\nobibliography{MasterBib} %this specifies the BibTex directory that stores your desired bibliography entries.  It has to come before any \bibentry lines are invoked
+
+\bibliographystyle{apalike} %be careful here, there is only a few styles that will run
+
+
+%\tableofcontents
+
+\begin{center}
+\bigskip
+\large{\bf{CMSC 389O}}
+
+\textbf{The Coding Interview}
+
+\textsc{Fall 2020} \bigskip
+
+\end{center}
+
+\section*{Course Description}%starred section will eliminate numbering; remove stars to get numbered sections especially if you are using TOC for some reason in your syllabus
+This course provides a comprehensive, practical introduction to technical interviews.
+The course will start with basic topics such as Big O and String Manipulation.
+We will then move into more complex topics such as Graphs and Dynamic Programming.
+Most of the classes will be in-class interviews to give real interview practice.
+
+
+\section*{Course Details}
+\noindent\textbf{Prerequisites: }Minimum grade of C- in CMSC216 and CMSC250 \medskip
+
+\noindent\textbf{Recommended co-requisite: }CMSC351 \medskip
+
+\noindent\textbf{Credits: }1 \medskip
+
+\noindent\textbf{Seats per Section: }30 \medskip
+
+\noindent\textbf{Language(s): }Python
+
+\noindent No prior knowledge of Python is expected. Students might have the option of using other languages in in-class interviews or assessments, but Python is strongly recommended for technical interviews. All submit server homeworks will use Python.
+\medskip
+
+\noindent\textbf{Textbook (recommended): }
+
+\noindent\href{https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/}{Cracking the Coding Interview}
+{\small by Gayle Laakmann McDowell} \medskip
+
+\noindent\textbf{Supplementary Material: }
+
+\begin{table}[hbt!]
+  \begin{tabular}{@{}ll}
+    All topics & \href{https://www.amazon.com/Elements-Programming-Interviews-Python-Insiders/dp/1537713949}{Elements of Programming Interviews} {\small by Adnan Aziz, Tsung-Hsien Lee, Amit Prakash} \\
+    Big O & \href{https://cses.fi/book/index.html}{Competitive Programmer's Handbook sec. 2.2, 2.3} {\small (online book) by Antti Laaksonen} \\
+    % Sys. Design & \href{https://github.com/donnemartin/system-design-primer}{System Design Primer} (open-source repository)
+    % distributed system design is cut from syllabus?
+  \end{tabular}
+\end{table}
+
+
+\medskip
+
+\noindent\textbf{Time and Location:}
+
+\begin{table}[H]
+  \begin{tabular}{rrl}
+    Section & Time    & Location  \\
+    \hline
+    TBD & TBD & TBD\\
+    ... & ... & ...\\
+    % 0101 & 11:00am & ESJ B0320 \\
+    % 0201 & 2:00pm  & HBK 0105  \\
+    % 0301 & 11:00am & ESJ B0322 \\
+    % 0401 & 12:00pm & ESJ 1309  \\
+    % 0501 & 1:00pm  & ESJ 1309
+  \end{tabular}
+\end{table}
+\medskip
+\newpage %otherwise "Contact:" is hanging on page
+\noindent\textbf{Contact: }
+
+\noindent We will interact with students outside of class in primarily via Piazza.
+For example, if you are missing class because of an interview or
+wish to set up a mock interview with any of the TAs, make a Piazza post
+visible to instructors only.
+If you have a general question that other students might be able to answer,
+make a Piazza post visible to everyone.
+The exception to this is exam scheduling, which will most likely be done using Google Sheets.
+
+% Please use the subject line \texttt{<Description> [TAs wanted]}.
+
+% For example, if you are in section 0401 and are missing class because of an interview,
+% an appropriate subject line would be
+% \texttt{Interview conflicting with class 10/5 [Maria, Nelson, Tim]}.
+% If you are emailing about setting up a mock interview with any of the TAs
+% or have a question that is relevant to all TAs please use \texttt{[All]}.
+
+% ELMS will be used primarily for announcements; if you need to message us for any reason,
+% please use email.
+
+\medskip
+
+\noindent\textbf{Course Facilitator(s): }
+
+\begin{table}[H]
+  \begin{tabular}{@{}rll}
+    Head TA & Dhruv Mehta     & \href{mailto:dhruvnm@umd.edu}{dhruvnm@umd.edu}\\
+    TBD     & Naveen Raman    & \href{mailto:nav.j.raman@gmail.com}{nav.j.raman@gmail.com}\\
+    TBD     & TBD    & TBD\\
+    ... & ... & ...
+  \end{tabular}
+\end{table}
+\medskip
+
+\noindent\textbf{Faculty Advisor: }Tom Goldstein
+\href{mailto:tomg@umd.edu}{tomg@umd.edu} \medskip
+
+
+\section*{Schedule (tentative)}
+%See table \ref{tab:schedule} for the weekly schedule.
+%
+\begin{table}[H] % H is HERE, even if it makes spacing worse
+  \begin{tabular}{@{}rlll}
+    Wk & Date & Topic & Point People \\
+    \hline
+    1 & 2020-09-04 & Intro / Resumes / Mock Interview & TBD \\
+    2 & 2020-09-11 & Arrays \& Strings                & TBD \\
+    3 & 2020-09-18 & Sorting \& Searching             & TBD \\
+    4 & 2020-09-25 & Linked Lists                     & TBD \\
+    5 & 2020-10-02 & Inheritance                      & TBD \\
+    6 & 2020-10-09 & Stacks, Queues, \& Heaps         & TBD \\
+    7 & 2020-10-16 & Graphs                           & TBD \\
+    8 & 2020-10-23 & Trees \& Tries                   & TBD \\
+    9 & 2020-10-30 & Dynamic Programming              & TBD \\
+    10& 2020-11-06 & Technical Concepts I             & TBD \\
+    11& 2020-11-13 & Technical Concepts II            & TBD \\
+    12& 2020-11-27 & \multicolumn{2}{c}{\textbf{No class, Thanksgiving Recess}} \\
+    13& 2020-12-04 & \multicolumn{2}{c}{\textbf{CMSC389O Finals Week I}} \\
+    14& 2020-12-11 & \multicolumn{2}{c}{\textbf{CMSC389O Finals Week II}} \\
+    16& 2020-12-18 & \multicolumn{2}{c}{\textbf{Final Exams Week}}
+
+  \end{tabular}
+  \caption{Schedule for the semester, broken down by week}
+  \label{tab:schedule}
+\end{table}
+
+Please note if you have any questions about a particular week’s pre-lecture activity, lecture activity, homework, or extra credit, the point people for that topic are the best people to answer your question.
+
+
+\section*{Grading}
+\noindent Grades will be maintained on ELMS.
+You will be responsible for all material discussed in lecture as well as other standard means of communication (Piazza, ELMS announcements, email, etc).
+This includes deadlines, policies, and assignment changes.
+
+Any request for reconsideration of any grading on coursework must be submitted within one week of when it is returned.
+No requests will be considered afterward.
+
+Your final course grade will be determined according to the components detailed below.
+\textbf{In addition, ten (10) extra credit opportunities will be provided throughout the semester.}
+\textbf{In aggregate, the extra credit assignments can boost your grade up to 5\%.} \medskip
+
+\subsection*{Breakdown}
+\subsubsection*{Class Participation (30\%)}
+
+\noindent Most Classes will consist of in-class partner interviews.
+\textbf{Showing up more than 5 minutes late will result in a grade of 0 for participation for that class period.}
+Students with excused absences will not be penalized for missing class.
+Please see below for absences policy.
+\textbf{​Students with special circumstances, such as a far-away previous class, should speak with instructors on the first day.}
+
+\subsubsection*{Pre-Lecture Videos/Quizzes (10\%)}
+Students will be responsible for watching pre-lecture videos and
+completing pre-lecture quizzes or activities to demonstrate their understanding of the content in the videos.
+
+\subsubsection*{Homework (20\%)}
+Weekly homework assignments will consist of solving coding interview questions and submitting solutions to the UMD CS submit server.
+Students will be graded on passing test cases, on the time and space complexities of their solution, and on completion of a short write-up regarding their solution.
+{\em Note that these are not mutually exclusive: solutions with higher time/space complexities may fail to pass some tests on the submit server --- this is intentional.}
+% TODO hw rubric?
+% See below for a full homework grading rubric.
+
+\textbf{Homeworks will be accepted up to 24 hours after the deadline, with a 20\% deduction in credit.}
+\textbf{No homework will be accepted more than 24 hours late.}
+
+\subsubsection*{Midterm --- Interview (20\%)}
+The midterm will be a 30-minute Google Hangout technical interview with one of the student facilitators.
+Students will be expected to solve 1--2 coding questions and have a brief conversation about their experiences and skills.
+
+\subsubsection*{Final --- Interview (20\%)}
+The final will be a 45-minute Google Hangout or in-person (limited availability) technical interview with one of the student facilitators.
+Students will be expected to solve 1--2 coding questions, have a brief conversation about their experiences and skills, and discuss some technical concepts.
+
+%\subsection*{Letter Grades}
+%Letter grades are based on a standard percentage scale: A+ cutoff at 97\%, A @ 93\%, A- @ 90\%, etc.
+%The course facilitators reserve the right to lower the cutoffs (``curve up''),
+%but not increase them (``curve down''). This is not a guarantee that cutoffs will be adjusted.
+
+%\section*{Homework Rubric}
+%TODO
+
+\section*{Excused Absence and Academic Accommodations}
+See the section titled ``Attendance, Absences, or Missed Assignments'' available at \href{https://www.ugst.umd.edu/courserelatedpolicies.html}{Course Related Policies}.
+\textbf{Note that absences due to internship/job interviews will be excused.}
+
+\section*{Disability Support Accommodations}
+See the section titled ``Accessibility'' available at \href{https://www.ugst.umd.edu/courserelatedpolicies.html}{Course Related Policies}.
+
+\section*{Academic Integrity}
+Note that academic dishonesty includes not only cheating, fabrication, and plagiarism but also includes helping other students commit acts of academic dishonesty by allowing them to obtain copies of your work.
+In short, all submitted work must be your own.
+Cases of academic dishonesty will be pursued to the fullest extent possible as stipulated by the \href{https://www.studentconduct.umd.edu/}{Office of Student Conduct}.
+It is very important for you to be aware of the consequences of cheating, fabrication, facilitation, and plagiarism.
+For more information on the Code of Academic Integrity or the Student Honor Council, please visit \href{https://www.shc.umd.edu/}{https://www.shc.umd.edu/}.
+
+Also note that any ``hard coding'' in a homework assignment may result in a score of zero for that assignment. Hard coding refers to attempting to make a program appear as if it works correctly, when in fact it does not. One example of hard coding would be printing the desired output instead of computing it. This is only one example, and if you have any questions as to what constitutes hard coding, be sure to ask ahead of time.
+
+\section*{Course Evaluations}
+If you have a suggestion for improving this class, do not hesitate to tell the instructor or TAs during the semester.
+At the end of the semester, please do not forget to provide your feedback using the campus-wide CouseEvalUM system. Your commends will help make this class better.
+
+\section*{Notes}
+Syllabus subject to change.
+
+\end{document}
